@@ -3,7 +3,17 @@
   "version": "0.0.1",
   "author": "Chukwuebuka Onyekelu (github @cloudtechy)",
   "description": "A desktop app that manages the price of products",
-  "license": "",
+  "license": "MIT",
+  "keywords": [
+    "Electron",
+    "product",
+    "price",
+    "JavaScript",
+    "Vue",
+    "Vuex",
+    "Desktop",
+    "Price Manager"
+  ],
   "main": "./dist/electron/main.js",
   "scripts": {
     "build": "node .electron-vue/build.js && electron-builder",
@@ -45,13 +55,15 @@
     },
     "win": {
       "icon": "build/icons/icon.ico",
-     "target" : [
-       {
-        "target" : "nsis",
-        "arch" : ["x64", "ia32"]
-       }
-
-     ] 
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
     },
     "linux": {
       "icon": "build/icons"
@@ -90,7 +102,6 @@
     "electron-builder": "^20.19.2",
     "electron-debug": "^1.5.0",
     "electron-devtools-installer": "^2.2.4",
-    "electron-rebuild": "^1.8.8",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "0.4.0",

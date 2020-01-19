@@ -1,7 +1,8 @@
 import { userInfo, platform } from 'os'
 import { notify } from 'node-notifier'
+import { join } from 'path'
 
-let logoPath = '../../static/logo.png'
+let logoPath = join(__dirname, '../../../static/logo.png')
 class Notify {
     static alert(title, message) {
         notify({

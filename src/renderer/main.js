@@ -3,8 +3,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store'
-import  '../../bower_components/components-font-awesome'
-import 'bootstrap'; 
+import '../../bower_components/components-font-awesome'
+import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import jQuery from 'jquery'
 import { ipcRenderer, remote } from "electron";
@@ -23,9 +23,8 @@ new Vue({
   components: { App },
   router,
   store,
-  
   template: '<App/>',
-  data : {
+  data: {
     ipcRenderer,
     remote
   },

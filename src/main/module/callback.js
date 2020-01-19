@@ -5,7 +5,7 @@ class Callback {
         db.get(id).then(res => event.returnValue = { data: res })
             .catch(err => event.returnValue = { error: err })
     }
-    static  allProduct(event) {
+    static allProduct(event) {
         db.getAll().then(res => event.returnValue = { data: res })
             .catch(err => event.returnValue = { error: err })
     }

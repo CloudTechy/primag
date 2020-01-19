@@ -10,7 +10,9 @@
       <form role="form" ref="form" @submit.prevent="submit">
         <div class="modal-body">
           <fieldset class="border border-secondary p-2">
-            <legend class="w-auto font-weight-bold border text-capitalize text-white bg-secondary">{{method}}</legend>
+            <legend
+              class="w-auto font-weight-bold border text-capitalize text-white bg-secondary"
+            >{{method}}</legend>
             <div v-if="error" class="alert alert-danger alert-dismissible fade show" role="alert">
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -102,8 +104,8 @@ export default {
           );
           this.$store.dispatch("addProduct", res);
           this.name = "";
-        this.price = "";
-        this.id = "";
+          this.price = "";
+          this.id = "";
           this.$refs.close.click();
         } else {
           this.error =
